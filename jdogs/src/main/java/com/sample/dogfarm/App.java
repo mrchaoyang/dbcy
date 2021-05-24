@@ -58,22 +58,22 @@ public class App {
     public static void main(String[] args) {
 
         int cost = 17054;
-        int data[] = {1, 1, 0, 1, 1, 2, 1, 3, 1, 0, 1};
+        int data[] = {2, 0, 0, 2, 0, 3, 0, 2, 2, 0, 1};
         House myKennel = new House(17, data);
         myKennel.print();
         System.out.println();
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 30; i++) {
             System.out.println("i=" + i);
             run(myKennel);
             System.out.println();
         }
 
 //        int data2[] = {1, 1, 1, 1, 1, 1, 2, 0, 2, 1, 1, 0};
-//        House myKennel2 = new House(16, data2);
-//        int orig = myKennel2.value;
-//        run(myKennel2, 22);
-//        System.out.println();
+        House myKennel2 = new House(17, data);
+        int orig = myKennel2.value;
+        run(myKennel2, 300);
+        System.out.println();
 
     }
 }
