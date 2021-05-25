@@ -3,7 +3,7 @@ package com.sample.dogfarm;
 import com.sample.dogfarm.models.House;
 import com.sample.dogfarm.models.ValueConstants;
 
-public class App {
+public class DogApp {
 
     static void evolve(House house) {
         for (int i = 0; i < 12; i++) {
@@ -57,9 +57,9 @@ public class App {
 
     public static void main(String[] args) {
 
-        int cost = 17054;
-        int data[] = {2, 0, 0, 2, 0, 3, 0, 2, 2, 0, 1};
+        int data[] = {1, 1, 1, 1, 1, 1, 1, 0, 4, 0, 1};
         House myKennel = new House(17, data);
+
         myKennel.print();
         System.out.println();
 
@@ -69,8 +69,8 @@ public class App {
             System.out.println();
         }
 
-//        int data2[] = {1, 1, 1, 1, 1, 1, 2, 0, 2, 1, 1, 0};
-        House myKennel2 = new House(17, data);
+        int data2[] = {1, 1, 1, 1, 1, 1, 1, 0, 4, 0, 1};
+        House myKennel2 = new House(17, data2);
         int orig = myKennel2.value;
         run(myKennel2, 300);
         System.out.println();
