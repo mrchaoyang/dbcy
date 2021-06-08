@@ -1,5 +1,7 @@
 package com.sample.dogfarm.models;
 
+import java.util.ArrayList;
+
 public class House {
     public int base;
     public int[] arr;
@@ -12,14 +14,14 @@ public class House {
         eval();
     }
 
-    public int eval(){
-        this.value=0;
-        int ct=1;
-        this.equiv=0;
-        for(int i=0; i<11; i++) {
+    public int eval() {
+        this.value = 0;
+        int ct = 1;
+        this.equiv = 0;
+        for (int i = 0; i < 11; i++) {
             this.equiv += ct * arr[i];
-            ct *=2;
-            this.value += arr[i]* ValueConstants.values.get(i+base-1);
+            ct *= 2;
+            this.value += arr[i] * ValueConstants.values.get(i + base - 1);
         }
         return this.value;
     }
@@ -27,9 +29,11 @@ public class House {
     public void print() {
         System.out.print("base=L" + base + ";  ");
         System.out.print("value=" + eval() + ";  ");
-        System.out.printf("count=%d  %s \t", equiv, Integer.toBinaryString(equiv) );
+        System.out.printf("count=%d  %s \t", equiv, Integer.toBinaryString(equiv));
         for (int i = 0; i < 11; i++) {
-            System.out.print("L" + (i + base) + "=" + arr[i] + "  ");
+            if (i % 3 == 0)
+                System.out.print(" ");
+            System.out.print(arr[i]);
         }
         System.out.println();
     }

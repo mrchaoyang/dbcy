@@ -32,8 +32,7 @@ public class DogApp {
             house.print();
         }
 
-        System.out.println();
-        System.out.printf("needed: %d steps \t cost: %,d \t value increased by %d", steps, steps * cost,
+        System.out.printf("  needed: %d steps \t cost: %,d \t value increased by %d", steps, steps * cost,
                 (house.value - original));
         System.out.println();
     }
@@ -57,8 +56,8 @@ public class DogApp {
 
     public static void main(String[] args) {
 
-        int data[] = {1, 1, 1, 1, 1, 1, 1, 0, 4, 0, 1};
-        House myKennel = new House(17, data);
+        int data[] = {1, 0, 2, 0, 2, 1, 2, 1, 2, 0, 1};
+        House myKennel = new House(19, data);
 
         myKennel.print();
         System.out.println();
@@ -69,10 +68,10 @@ public class DogApp {
             System.out.println();
         }
 
-        int data2[] = {1, 1, 1, 1, 1, 1, 1, 0, 4, 0, 1};
-        House myKennel2 = new House(17, data2);
+        int data2[] = { 1, 2, 2,  1, 0, 1, 2, 1, 1, 0, 1};
+        House myKennel2 = new House(19, data2);
         int orig = myKennel2.value;
-        run(myKennel2, 300);
+        run(myKennel2, 400);
         System.out.println();
 
     }

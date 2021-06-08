@@ -36,8 +36,8 @@ public class ValueConstants {
 
     public static final int L26 = 10600;
     public static final int L27 = 18400;
-    public static final int L28 = 2 * L27;
-    public static final int L29 = 2 * L28;
+    public static final int L28 = 32000;
+    public static final int L29 = 55500;
     public static final int L30 = 2 * L29;
 
     public static ArrayList<Integer> values = new ArrayList<>(Arrays.asList(
@@ -64,10 +64,10 @@ public class ValueConstants {
     public static final int C14 = 2448900;
     public static final int C15 = 4576500;
 
-    public static final int C16 = 8762100;
-    public static final int C17 = 17054000;
-    public static final int C18 = 202;
-    public static final int C19 = 302;
+    public static final int C16 = 8762;
+    public static final int C17 = 17054;
+    public static final int C18 = 33550;
+    public static final int C19 = 66441;
     public static final int C20 = 470;
 
     public static final int C21 = 758;
@@ -78,7 +78,7 @@ public class ValueConstants {
 
     public static final int C26 = 10600;
     public static final int C27 = 18400;
-    public static final int C28 = 2 * L27;
+    public static final int C28 = 32000;
     public static final int C29 = 2 * L28;
     public static final int C30 = 2 * L29;
 
@@ -87,6 +87,4 @@ public class ValueConstants {
             C11, C12, C13, C14, C15, C16, C17, C18, C19, C20,
             C21, C22, C23, C24, C25, C26, C27, C28, C29, C30
     ));
-
-
 }
