@@ -56,22 +56,22 @@ public class DogApp {
 
     public static void main(String[] args) {
 
-        int data[] = {1, 0, 2, 0, 2, 1, 2, 1, 2, 0, 1};
-        House myKennel = new House(19, data);
+        int data[] = {2,1,2,     6,0,0,    0,0,0,    0,1};
+        House myKennel = new House(23, data);
 
         myKennel.print();
         System.out.println();
 
-        for (int i = 0; i < 30; i++) {
+        for (int i = 0; i < 20; i++) {
             System.out.println("i=" + i);
             run(myKennel);
             System.out.println();
         }
 
-        int data2[] = { 1, 2, 2,  1, 0, 1, 2, 1, 1, 0, 1};
-        House myKennel2 = new House(19, data2);
+        int data2[] = {2,3,6,     0,0,0,    0,0,0,    0, 1};
+        House myKennel2 = new House(23, data2);
         int orig = myKennel2.value;
-        run(myKennel2, 400);
+        run(myKennel2, 620);
         System.out.println();
 
     }
