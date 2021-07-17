@@ -43,8 +43,8 @@ public class ValueConstants {
     public static final int L31 = 168000;
     public static final int L32 = 292300;
     public static final int L33 = 508800;
-    public static final int L34 = 3591;
-    public static final int L35 = 6200;
+    public static final int L34 = 885800;
+    public static final int L35 = 1500000;
 
     public static final int L36 = 10600;
     public static final int L37 = 18400;
@@ -84,7 +84,7 @@ public class ValueConstants {
     public static final int C21 = 263330;
     public static final int C22 = 525640;
     public static final int C23 = 1050100;
-    public static final int C24 = 3591;
+    public static final int C24 = 2098900;
     public static final int C25 = 6200;
 
     public static final int C26 = 10600;
